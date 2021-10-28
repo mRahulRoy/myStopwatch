@@ -18,7 +18,7 @@
         }
 
         .watch-text-cont {
-            height: 150px;
+            height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -39,7 +39,6 @@
             flex-wrap: wrap;
             background-color: rgb(246, 255, 238);
             overflow-y: hidden;
-    
         }
         .time-cont div{
             margin: 0 20px;
@@ -65,7 +64,7 @@
         }
 
         .btns {
-            height: 200px;
+            height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -99,12 +98,35 @@
         button:nth-child(3){
             background-color: rgb(2, 2, 5);
         }
-        @media (min-width:406px){
+
+        @media (max-width:553px){
+            h2{
+                font-size: 40px;
+            }
+            .time-cont{
+                flex-wrap: nowrap;
+                height: 200px;
+
+            }
+            .time-cont .time{
+                margin: 0 5px;
+            }
+            .time-cont .time{
+                width: 100px;
+                height: 80px;
+            }
+            .time-cont .time:hover{
+                transform: scale(.8);
+            }
+            
+        }
+    
+        
+        @media (max-width:406px) {
+
             .time-cont div{
                 justify-content: space-evenly;
             }
-        }
-        @media (max-width:406px) {
             h2 {
                 font-size: 12vw;
             }
